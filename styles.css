@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Outfit", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  width: 50%;
+  height: 98vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculator {
+  width: 100%;
+  padding: 50px;
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.calculator-header {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  flex-direction: row;
+  color: hsl(0, 0%, 100%);
+  justify-content: space-between;
+}
+
+.display {
+  height: 100px;
+  margin: 16px auto;
+  border-radius: 8px;
+  background-color: hsl(224, 36%, 15%);
+}
+
+#display-value {
+  display: flex;
+  height: 100%;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-right: 24px;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  justify-content: flex-end;
+}
+
+.buttons {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: hsl(223, 31%, 20%);
+}
+
+.button-grid {
+  display: grid;
+  row-gap: 2px;
+  column-gap: 2px;
+  grid-template-rows: 75px 75px 75px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.action-buttons {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+  flex-direction: row;
+}
+
+.action-buttons .button {
+  width: 200px;
+}
+.button {
+  width: 85px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  user-select: none;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+
+.button:active {
+  transition: ease 0.2s;
+  background-color: hsl(28, 16%, 65%);
+}
+
+.button-reset {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+
+.button-equal {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+.button-reset:active {
+  background-color: hsl(224, 28%, 35%);
+  box-shadow: 0px 4px hsl(224, 28%, 25%);
+}
+
+.button-equal:active {
+  background-color: hsl(6, 70%, 34%);
+  box-shadow: 0px 4px hsl(6, 70%, 24%);
+}
